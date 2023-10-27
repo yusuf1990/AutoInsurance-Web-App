@@ -124,7 +124,7 @@ def show_prediction():
         #st.subheader(f"T {claim}")
 
         prediction=classifier.predict_proba(X)[:, 1]
-        st.subheader(f"T {prediction}")
+        #st.subheader(f"T {prediction}")
         if prediction >= 0.16: # 'spam':
             st.subheader("The client will renew its claim")
         else:
